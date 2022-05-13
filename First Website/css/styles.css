@@ -1,0 +1,258 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: blanchedalmond;
+  margin: auto 70px;
+  color: black;
+}
+
+.lights-off {
+  background-color: black;
+  color: white;
+}
+
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #25343b;
+  clip-path: circle(600px at right 800px);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+}
+
+header .left-side a img{
+  width: 200px;
+}
+
+header .right-side{
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  max-width: 90%;
+  margin: 200px auto;
+  display: flex;
+}
+
+.container .left-side{
+  text-align: left;
+  flex: 1;
+}
+
+.container .left-side h1{
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.container .left-side h1 .green{
+  color: #24ac5a;
+  font-family: 'Viga', serif;
+}
+
+.container .left-side p{
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-family: cursive;
+}
+
+.container .left-side a{
+  display: inline-block;
+  background: #24ac5a;
+  padding: 12px 18px 12px 18px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-top: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container .right-side{
+  flex: 1;
+  text-align: center;
+}
+
+.container .right-side img{
+  width: 500px;
+  margin-left: 150px;
+  margin-top: -30px;
+}
+
+.container .right-side .box{
+  display: grid;
+  position: absolute;
+  bottom: 40%;
+  right: 1%;
+}
+
+.container .right-side .box img{
+  width: 25px;
+  margin: 10px;
+}
+
+.container .right-side .box img.facebook{
+  width: 18.5px;
+}
+
+.thumb{
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+}
+
+.thumb img{
+  width: 74px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.switch[type="checkbox"]+label {
+  display: inline-flex;
+  position: relative;
+  line-height: 36px;
+  padding-left: 78px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.switch[type="checkbox"]:checked+label::before {
+  background: linear-gradient(to right, #758b95 0, #25343b 100%);
+}
+
+.switch[type="checkbox"]+label::before {
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 36px;
+  border-radius: 18px;
+  background: linear-gradient(to right, #2FEAFC 0, #535FD7 100%);
+}
+
+.switch[type="checkbox"]+label::before, .switch[type="checkbox"]+label::after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.switch[type="checkbox"]+label::after {
+  top: 6px;
+  left: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: #fff;
+  transition: all .15s ease-out;
+  left: 34px;
+}
+
+.switch[type="checkbox"]:checked+label::after {
+  left: 7px;
+}
+
+.switch[type="checkbox"] {
+  outline: 0;
+  user-select: none;
+  position: absolute;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1260px) {
+  .container{
+    flex-direction: column;
+    margin: 70px auto;
+  }
+  .circle{
+    top: 355px;
+  }
+  .thumb {
+    position: absolute;
+    bottom: -40%;
+    left: 6%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  .circle{
+    top: 475px;
+    height: 75%;
+  }
+  .container .right-side img {
+    width: 365px;
+    margin-left: -345px;
+    margin-top: -18px;
+  }
+  .thumb {
+    display: flex;
+    bottom: -28%;
+    left: 84%;
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .container .left-side h1 {
+    font-size: 32px;
+}
+.container .left-side p {
+  font-size: 14px;
+}
+.container {
+  margin: 70px auto;
+}
+header {
+  width: 100%;
+  align-items: flex-start;
+}
+label span {
+  opacity: 0;
+}
+.switch[type="checkbox"]+label::before, .switch[type="checkbox"]+label::after {
+  margin-left: 40px;
+}
+.container .left-side a {
+  margin-top: 8px;
+}
+.container .right-side .box {
+  bottom: 35%;
+}
+.thumb {
+  left: 0px;
+  bottom: -9%;
+  flex-direction: row;
+}
+.thumb img {
+  width: 74px;
+  margin: 5px;
+  cursor: pointer;
+}
+.container .right-side img {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.circle {
+  top: 475px;
+  height: 55%;
+}
+body {
+  margin: auto 20px;
+}
+}

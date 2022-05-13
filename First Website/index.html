@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="circle"></div>
+      <div class="left-side">
+        <a href="#"> <img src="img/logo.svg" alt=""> </a>
+      </div>
+      <div class="right-side">
+        <div class="lights-toggle">
+          <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
+          <label for="lights-toggle" class="text-xs"><span>Switch <span class="label-text"></span></span></label>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="left-side">
+        <h1>It's not just a team <br>
+          It's <span class = "green"> a family </span>
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+           sunt cumque pariatur sint dignissimos odio sit facilis porro veritatis
+           earum itaque similique voluptatem dolores est ipsum, sequi non temporibus,
+           quae.</p>
+        <a>Learn More</a>
+        <a id="add">Add member</a>
+      </div>
+      <div class="right-side">
+        <img src="img/avatar1.png" alt="" class = "member">
+        <div class="box">
+          <a href="#"> <img class = "facebook" src="img/facebook.png" alt=""></a>
+          <a href="#"> <img src="img/instagram.png" alt=""></a>
+          <a href="#"> <img src="img/twitter.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="thumb" id="members">
+      <img id = "bottom" src="img/avatar1.png" onclick="imgSlider('img/avatar1.png');changeColor('#25343b')">
+      <img src="img/avatar6.png" onclick="imgSlider('img/avatar6.png'); changeColor('#416985')">
+      <img src="img/avatar5.png" onclick="imgSlider('img/avatar5.png');changeColor('#7c1424')">
+    </div>
+    <script src = "js/script.js"></script>
+  </body>
+</html>
